@@ -1,0 +1,11 @@
+--------------------------------------------------------------
+|                                                            |
+|    (1) Añadir paciente.                                    |
+|    (2) Listar pacientes.                                   |
+|    (3) Borrar paciente.                                    |
+|    (4) Mostrar detalles paciente.                          |
+|    (5) Incrementar hospitalizaciones                       |
+|                                                            |
+|    (6) Salir.                                              |
+|                                                            |
+--------------------------------------------------------------

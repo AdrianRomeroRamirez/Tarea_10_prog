@@ -1,0 +1,901 @@
+2019-05-01 20:23:54 database: flush
+org.h2.message.DbException: Error General : "java.lang.IllegalStateException: The file is locked: nio:C:/Users/adria/OneDrive/Desktop/DAW/_PROG/Tareas/NetBeansProjects/Tarea 10/TareaUT10_2018-19_Incompleta_VersionAlumnado/pacientes.h2db.mv.db [1.4.197/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/adria/OneDrive/Desktop/DAW/_PROG/Tareas/NetBeansProjects/Tarea 10/TareaUT10_2018-19_Incompleta_VersionAlumnado/pacientes.h2db.mv.db [1.4.197/7]" [50000-197]
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.message.DbException.convert(DbException.java:307)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:95)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2506)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:383)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:364)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2934)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:155)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:100)
+	at org.h2.engine.Database.getPageStore(Database.java:2538)
+	at org.h2.engine.Database.open(Database.java:709)
+	at org.h2.engine.Database.openDatabase(Database.java:286)
+	at org.h2.engine.Database.<init>(Database.java:280)
+	at org.h2.engine.Engine.openSession(Engine.java:66)
+	at org.h2.engine.Engine.openSession(Engine.java:179)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:157)
+	at org.h2.engine.Engine.createSession(Engine.java:140)
+	at org.h2.engine.Engine.createSession(Engine.java:28)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:351)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:124)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:103)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at gestpacientes.Aplicacion.main(Aplicacion.java:49)
+Caused by: org.h2.jdbc.JdbcSQLException: Error General : "java.lang.IllegalStateException: The file is locked: nio:C:/Users/adria/OneDrive/Desktop/DAW/_PROG/Tareas/NetBeansProjects/Tarea 10/TareaUT10_2018-19_Incompleta_VersionAlumnado/pacientes.h2db.mv.db [1.4.197/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/adria/OneDrive/Desktop/DAW/_PROG/Tareas/NetBeansProjects/Tarea 10/TareaUT10_2018-19_Incompleta_VersionAlumnado/pacientes.h2db.mv.db [1.4.197/7]" [50000-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	... 25 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/adria/OneDrive/Desktop/DAW/_PROG/Tareas/NetBeansProjects/Tarea 10/TareaUT10_2018-19_Incompleta_VersionAlumnado/pacientes.h2db.mv.db [1.4.197/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:870)
+	at org.h2.mvstore.FileStore.open(FileStore.java:173)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:350)
+	... 19 more
+2019-05-01 20:24:40 database: flush
+org.h2.message.DbException: Error General : "java.lang.IllegalStateException: The file is locked: nio:C:/Users/adria/OneDrive/Desktop/DAW/_PROG/Tareas/NetBeansProjects/Tarea 10/TareaUT10_2018-19_Incompleta_VersionAlumnado/pacientes.h2db.mv.db [1.4.197/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/adria/OneDrive/Desktop/DAW/_PROG/Tareas/NetBeansProjects/Tarea 10/TareaUT10_2018-19_Incompleta_VersionAlumnado/pacientes.h2db.mv.db [1.4.197/7]" [50000-197]
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.message.DbException.convert(DbException.java:307)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:95)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2506)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:383)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:364)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2934)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:155)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:100)
+	at org.h2.engine.Database.getPageStore(Database.java:2538)
+	at org.h2.engine.Database.open(Database.java:709)
+	at org.h2.engine.Database.openDatabase(Database.java:286)
+	at org.h2.engine.Database.<init>(Database.java:280)
+	at org.h2.engine.Engine.openSession(Engine.java:66)
+	at org.h2.engine.Engine.openSession(Engine.java:179)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:157)
+	at org.h2.engine.Engine.createSession(Engine.java:140)
+	at org.h2.engine.Engine.createSession(Engine.java:28)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:351)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:124)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:103)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at gestpacientes.Aplicacion.main(Aplicacion.java:49)
+Caused by: org.h2.jdbc.JdbcSQLException: Error General : "java.lang.IllegalStateException: The file is locked: nio:C:/Users/adria/OneDrive/Desktop/DAW/_PROG/Tareas/NetBeansProjects/Tarea 10/TareaUT10_2018-19_Incompleta_VersionAlumnado/pacientes.h2db.mv.db [1.4.197/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/adria/OneDrive/Desktop/DAW/_PROG/Tareas/NetBeansProjects/Tarea 10/TareaUT10_2018-19_Incompleta_VersionAlumnado/pacientes.h2db.mv.db [1.4.197/7]" [50000-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	... 25 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/adria/OneDrive/Desktop/DAW/_PROG/Tareas/NetBeansProjects/Tarea 10/TareaUT10_2018-19_Incompleta_VersionAlumnado/pacientes.h2db.mv.db [1.4.197/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:870)
+	at org.h2.mvstore.FileStore.open(FileStore.java:173)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:350)
+	... 19 more
+2019-05-01 20:25:02 database: flush
+org.h2.message.DbException: Error General : "java.lang.IllegalStateException: The file is locked: nio:C:/Users/adria/OneDrive/Desktop/DAW/_PROG/Tareas/NetBeansProjects/Tarea 10/TareaUT10_2018-19_Incompleta_VersionAlumnado/pacientes.h2db.mv.db [1.4.197/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/adria/OneDrive/Desktop/DAW/_PROG/Tareas/NetBeansProjects/Tarea 10/TareaUT10_2018-19_Incompleta_VersionAlumnado/pacientes.h2db.mv.db [1.4.197/7]" [50000-197]
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.message.DbException.convert(DbException.java:307)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:95)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2506)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:383)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:364)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2934)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:155)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:100)
+	at org.h2.engine.Database.getPageStore(Database.java:2538)
+	at org.h2.engine.Database.open(Database.java:709)
+	at org.h2.engine.Database.openDatabase(Database.java:286)
+	at org.h2.engine.Database.<init>(Database.java:280)
+	at org.h2.engine.Engine.openSession(Engine.java:66)
+	at org.h2.engine.Engine.openSession(Engine.java:179)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:157)
+	at org.h2.engine.Engine.createSession(Engine.java:140)
+	at org.h2.engine.Engine.createSession(Engine.java:28)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:351)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:124)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:103)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at gestpacientes.Aplicacion.main(Aplicacion.java:49)
+Caused by: org.h2.jdbc.JdbcSQLException: Error General : "java.lang.IllegalStateException: The file is locked: nio:C:/Users/adria/OneDrive/Desktop/DAW/_PROG/Tareas/NetBeansProjects/Tarea 10/TareaUT10_2018-19_Incompleta_VersionAlumnado/pacientes.h2db.mv.db [1.4.197/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/adria/OneDrive/Desktop/DAW/_PROG/Tareas/NetBeansProjects/Tarea 10/TareaUT10_2018-19_Incompleta_VersionAlumnado/pacientes.h2db.mv.db [1.4.197/7]" [50000-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	... 25 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/adria/OneDrive/Desktop/DAW/_PROG/Tareas/NetBeansProjects/Tarea 10/TareaUT10_2018-19_Incompleta_VersionAlumnado/pacientes.h2db.mv.db [1.4.197/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:870)
+	at org.h2.mvstore.FileStore.open(FileStore.java:173)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:350)
+	... 19 more
+2019-05-01 20:25:48 database: flush
+org.h2.message.DbException: Error General : "java.lang.IllegalStateException: The file is locked: nio:C:/Users/adria/OneDrive/Desktop/DAW/_PROG/Tareas/NetBeansProjects/Tarea 10/TareaUT10_2018-19_Incompleta_VersionAlumnado/pacientes.h2db.mv.db [1.4.197/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/adria/OneDrive/Desktop/DAW/_PROG/Tareas/NetBeansProjects/Tarea 10/TareaUT10_2018-19_Incompleta_VersionAlumnado/pacientes.h2db.mv.db [1.4.197/7]" [50000-197]
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.message.DbException.convert(DbException.java:307)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:95)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2506)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:383)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:364)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2934)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:155)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:100)
+	at org.h2.engine.Database.getPageStore(Database.java:2538)
+	at org.h2.engine.Database.open(Database.java:709)
+	at org.h2.engine.Database.openDatabase(Database.java:286)
+	at org.h2.engine.Database.<init>(Database.java:280)
+	at org.h2.engine.Engine.openSession(Engine.java:66)
+	at org.h2.engine.Engine.openSession(Engine.java:179)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:157)
+	at org.h2.engine.Engine.createSession(Engine.java:140)
+	at org.h2.engine.Engine.createSession(Engine.java:28)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:351)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:124)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:103)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at gestpacientes.Aplicacion.main(Aplicacion.java:49)
+Caused by: org.h2.jdbc.JdbcSQLException: Error General : "java.lang.IllegalStateException: The file is locked: nio:C:/Users/adria/OneDrive/Desktop/DAW/_PROG/Tareas/NetBeansProjects/Tarea 10/TareaUT10_2018-19_Incompleta_VersionAlumnado/pacientes.h2db.mv.db [1.4.197/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/adria/OneDrive/Desktop/DAW/_PROG/Tareas/NetBeansProjects/Tarea 10/TareaUT10_2018-19_Incompleta_VersionAlumnado/pacientes.h2db.mv.db [1.4.197/7]" [50000-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	... 25 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/adria/OneDrive/Desktop/DAW/_PROG/Tareas/NetBeansProjects/Tarea 10/TareaUT10_2018-19_Incompleta_VersionAlumnado/pacientes.h2db.mv.db [1.4.197/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:870)
+	at org.h2.mvstore.FileStore.open(FileStore.java:173)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:350)
+	... 19 more
+2019-05-01 20:30:48 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Tabla "TEST" no encontrada
+Table "TEST" not found; SQL statement:
+SELECT * FROM TEST ORDER BY ID [42102-197]
+2019-05-01 20:31:47 database: flush
+org.h2.message.DbException: Error General : "java.lang.IllegalStateException: The file is locked: nio:C:/Users/adria/OneDrive/Desktop/DAW/_PROG/Tareas/NetBeansProjects/Tarea 10/TareaUT10_2018-19_Incompleta_VersionAlumnado/pacientes.h2db.mv.db [1.4.197/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/adria/OneDrive/Desktop/DAW/_PROG/Tareas/NetBeansProjects/Tarea 10/TareaUT10_2018-19_Incompleta_VersionAlumnado/pacientes.h2db.mv.db [1.4.197/7]" [50000-197]
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.message.DbException.convert(DbException.java:307)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:95)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2506)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:383)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:364)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2934)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:155)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:100)
+	at org.h2.engine.Database.getPageStore(Database.java:2538)
+	at org.h2.engine.Database.open(Database.java:709)
+	at org.h2.engine.Database.openDatabase(Database.java:286)
+	at org.h2.engine.Database.<init>(Database.java:280)
+	at org.h2.engine.Engine.openSession(Engine.java:66)
+	at org.h2.engine.Engine.openSession(Engine.java:179)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:157)
+	at org.h2.engine.Engine.createSession(Engine.java:140)
+	at org.h2.engine.Engine.createSession(Engine.java:28)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:351)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:124)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:103)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at gestpacientes.Aplicacion.main(Aplicacion.java:49)
+Caused by: org.h2.jdbc.JdbcSQLException: Error General : "java.lang.IllegalStateException: The file is locked: nio:C:/Users/adria/OneDrive/Desktop/DAW/_PROG/Tareas/NetBeansProjects/Tarea 10/TareaUT10_2018-19_Incompleta_VersionAlumnado/pacientes.h2db.mv.db [1.4.197/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/adria/OneDrive/Desktop/DAW/_PROG/Tareas/NetBeansProjects/Tarea 10/TareaUT10_2018-19_Incompleta_VersionAlumnado/pacientes.h2db.mv.db [1.4.197/7]" [50000-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	... 25 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/adria/OneDrive/Desktop/DAW/_PROG/Tareas/NetBeansProjects/Tarea 10/TareaUT10_2018-19_Incompleta_VersionAlumnado/pacientes.h2db.mv.db [1.4.197/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:870)
+	at org.h2.mvstore.FileStore.open(FileStore.java:173)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:350)
+	... 19 more
+2019-05-01 20:35:19 database: flush
+org.h2.message.DbException: Error General : "java.lang.IllegalStateException: The file is locked: nio:C:/Users/adria/OneDrive/Desktop/DAW/_PROG/Tareas/NetBeansProjects/Tarea 10/TareaUT10_2018-19_Incompleta_VersionAlumnado/pacientes.h2db.mv.db [1.4.197/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/adria/OneDrive/Desktop/DAW/_PROG/Tareas/NetBeansProjects/Tarea 10/TareaUT10_2018-19_Incompleta_VersionAlumnado/pacientes.h2db.mv.db [1.4.197/7]" [50000-197]
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.message.DbException.convert(DbException.java:307)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:95)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2506)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:383)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:364)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2934)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:155)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:100)
+	at org.h2.engine.Database.getPageStore(Database.java:2538)
+	at org.h2.engine.Database.open(Database.java:709)
+	at org.h2.engine.Database.openDatabase(Database.java:286)
+	at org.h2.engine.Database.<init>(Database.java:280)
+	at org.h2.engine.Engine.openSession(Engine.java:66)
+	at org.h2.engine.Engine.openSession(Engine.java:179)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:157)
+	at org.h2.engine.Engine.createSession(Engine.java:140)
+	at org.h2.engine.Engine.createSession(Engine.java:28)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:351)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:124)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:103)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at gestpacientes.Aplicacion.main(Aplicacion.java:49)
+Caused by: org.h2.jdbc.JdbcSQLException: Error General : "java.lang.IllegalStateException: The file is locked: nio:C:/Users/adria/OneDrive/Desktop/DAW/_PROG/Tareas/NetBeansProjects/Tarea 10/TareaUT10_2018-19_Incompleta_VersionAlumnado/pacientes.h2db.mv.db [1.4.197/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/adria/OneDrive/Desktop/DAW/_PROG/Tareas/NetBeansProjects/Tarea 10/TareaUT10_2018-19_Incompleta_VersionAlumnado/pacientes.h2db.mv.db [1.4.197/7]" [50000-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	... 25 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/adria/OneDrive/Desktop/DAW/_PROG/Tareas/NetBeansProjects/Tarea 10/TareaUT10_2018-19_Incompleta_VersionAlumnado/pacientes.h2db.mv.db [1.4.197/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:870)
+	at org.h2.mvstore.FileStore.open(FileStore.java:173)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:350)
+	... 19 more
+2019-05-01 20:41:16 database: flush
+org.h2.message.DbException: Error General : "java.lang.IllegalStateException: The file is locked: nio:C:/Users/adria/OneDrive/Desktop/DAW/_PROG/Tareas/NetBeansProjects/Tarea 10/TareaUT10_2018-19_Incompleta_VersionAlumnado/pacientes.h2db.mv.db [1.4.197/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/adria/OneDrive/Desktop/DAW/_PROG/Tareas/NetBeansProjects/Tarea 10/TareaUT10_2018-19_Incompleta_VersionAlumnado/pacientes.h2db.mv.db [1.4.197/7]" [50000-197]
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.message.DbException.convert(DbException.java:307)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:95)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2506)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:383)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:364)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2934)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:155)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:100)
+	at org.h2.engine.Database.getPageStore(Database.java:2538)
+	at org.h2.engine.Database.open(Database.java:709)
+	at org.h2.engine.Database.openDatabase(Database.java:286)
+	at org.h2.engine.Database.<init>(Database.java:280)
+	at org.h2.engine.Engine.openSession(Engine.java:66)
+	at org.h2.engine.Engine.openSession(Engine.java:179)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:157)
+	at org.h2.engine.Engine.createSession(Engine.java:140)
+	at org.h2.engine.Engine.createSession(Engine.java:28)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:351)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:124)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:103)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at gestpacientes.Aplicacion.main(Aplicacion.java:49)
+Caused by: org.h2.jdbc.JdbcSQLException: Error General : "java.lang.IllegalStateException: The file is locked: nio:C:/Users/adria/OneDrive/Desktop/DAW/_PROG/Tareas/NetBeansProjects/Tarea 10/TareaUT10_2018-19_Incompleta_VersionAlumnado/pacientes.h2db.mv.db [1.4.197/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/adria/OneDrive/Desktop/DAW/_PROG/Tareas/NetBeansProjects/Tarea 10/TareaUT10_2018-19_Incompleta_VersionAlumnado/pacientes.h2db.mv.db [1.4.197/7]" [50000-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	... 25 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/adria/OneDrive/Desktop/DAW/_PROG/Tareas/NetBeansProjects/Tarea 10/TareaUT10_2018-19_Incompleta_VersionAlumnado/pacientes.h2db.mv.db [1.4.197/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:870)
+	at org.h2.mvstore.FileStore.open(FileStore.java:173)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:350)
+	... 19 more
+2019-05-05 20:06:59 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Columna "DNI" no encontrada
+Column "DNI" not found; SQL statement:
+INSERT INTO PACIENTES VALUES (dni, nombre, apellidos, fechaNacimiento, nhosp); [42122-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:150)
+	at org.h2.command.dml.Insert.prepare(Insert.java:314)
+	at org.h2.command.Parser.prepareCommand(Parser.java:283)
+	at org.h2.engine.Session.prepareLocal(Session.java:611)
+	at org.h2.engine.Session.prepareCommand(Session.java:549)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1247)
+	at org.h2.jdbc.JdbcStatement.executeUpdateInternal(JdbcStatement.java:165)
+	at org.h2.jdbc.JdbcStatement.executeUpdate(JdbcStatement.java:126)
+	at gestpacientes.PacientesDAO.insert(PacientesDAO.java:46)
+	at gestpacientes.GestionPacientes.añadirPacientes(GestionPacientes.java:110)
+	at gestpacientes.GestionPacientes.loop(GestionPacientes.java:85)
+	at gestpacientes.Aplicacion.main(Aplicacion.java:91)
+2019-05-06 11:37:58 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLException: Columna "DNI" no encontrada
+Column "DNI" not found; SQL statement:
+INSERT INTO PACIENTES VALUES (dni, nombre, apellidos, fechaNacimiento, nhosp); [42122-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:150)
+	at org.h2.command.dml.Insert.prepare(Insert.java:314)
+	at org.h2.command.Parser.prepareCommand(Parser.java:283)
+	at org.h2.engine.Session.prepareLocal(Session.java:611)
+	at org.h2.engine.Session.prepareCommand(Session.java:549)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1247)
+	at org.h2.jdbc.JdbcStatement.executeUpdateInternal(JdbcStatement.java:165)
+	at org.h2.jdbc.JdbcStatement.executeUpdate(JdbcStatement.java:126)
+	at gestpacientes.PacientesDAO.insert(PacientesDAO.java:47)
+	at gestpacientes.GestionPacientes.añadirPacientes(GestionPacientes.java:110)
+	at gestpacientes.GestionPacientes.loop(GestionPacientes.java:85)
+	at gestpacientes.Aplicacion.main(Aplicacion.java:91)
+2019-05-06 11:47:07 database: flush
+org.h2.message.DbException: Error General : "java.lang.IllegalStateException: The file is locked: nio:C:/Users/adria/OneDrive/Desktop/DAW/_PROG/Tareas/NetBeansProjects/Tarea 10/TareaUT10_2018-19_Incompleta_VersionAlumnado/pacientes.h2db.mv.db [1.4.197/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/adria/OneDrive/Desktop/DAW/_PROG/Tareas/NetBeansProjects/Tarea 10/TareaUT10_2018-19_Incompleta_VersionAlumnado/pacientes.h2db.mv.db [1.4.197/7]" [50000-197]
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.message.DbException.convert(DbException.java:307)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:95)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2506)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:383)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:364)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2934)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:155)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:100)
+	at org.h2.engine.Database.getPageStore(Database.java:2538)
+	at org.h2.engine.Database.open(Database.java:709)
+	at org.h2.engine.Database.openDatabase(Database.java:286)
+	at org.h2.engine.Database.<init>(Database.java:280)
+	at org.h2.engine.Engine.openSession(Engine.java:66)
+	at org.h2.engine.Engine.openSession(Engine.java:179)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:157)
+	at org.h2.engine.Engine.createSession(Engine.java:140)
+	at org.h2.engine.Engine.createSession(Engine.java:28)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:351)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:124)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:103)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at gestpacientes.Aplicacion.main(Aplicacion.java:59)
+Caused by: org.h2.jdbc.JdbcSQLException: Error General : "java.lang.IllegalStateException: The file is locked: nio:C:/Users/adria/OneDrive/Desktop/DAW/_PROG/Tareas/NetBeansProjects/Tarea 10/TareaUT10_2018-19_Incompleta_VersionAlumnado/pacientes.h2db.mv.db [1.4.197/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/adria/OneDrive/Desktop/DAW/_PROG/Tareas/NetBeansProjects/Tarea 10/TareaUT10_2018-19_Incompleta_VersionAlumnado/pacientes.h2db.mv.db [1.4.197/7]" [50000-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	... 25 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/adria/OneDrive/Desktop/DAW/_PROG/Tareas/NetBeansProjects/Tarea 10/TareaUT10_2018-19_Incompleta_VersionAlumnado/pacientes.h2db.mv.db [1.4.197/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:870)
+	at org.h2.mvstore.FileStore.open(FileStore.java:173)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:350)
+	... 19 more
+2019-05-06 11:47:35 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLException: Columna "DNI" no encontrada
+Column "DNI" not found; SQL statement:
+INSERT INTO PACIENTES VALUES (dni, nombre, apellidos, fechaNacimiento, nhosp); [42122-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:150)
+	at org.h2.command.dml.Insert.prepare(Insert.java:314)
+	at org.h2.command.Parser.prepareCommand(Parser.java:283)
+	at org.h2.engine.Session.prepareLocal(Session.java:611)
+	at org.h2.engine.Session.prepareCommand(Session.java:549)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1247)
+	at org.h2.jdbc.JdbcStatement.executeUpdateInternal(JdbcStatement.java:165)
+	at org.h2.jdbc.JdbcStatement.executeUpdate(JdbcStatement.java:126)
+	at gestpacientes.PacientesDAO.insert(PacientesDAO.java:47)
+	at gestpacientes.GestionPacientes.añadirPacientes(GestionPacientes.java:110)
+	at gestpacientes.GestionPacientes.loop(GestionPacientes.java:85)
+	at gestpacientes.Aplicacion.main(Aplicacion.java:91)
+2019-05-06 11:48:33 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLException: Error de Sintaxis en sentencia SQL "INSERT PACIENTES[*] VALUES (DNI, NOMBRE, APELLISP); "; se esperaba "IGNORE, INTO"
+Syntax error in SQL statement "INSERT PACIENTES[*] VALUES (DNI, NOMBRE, APELLISP); "; expected "IGNORE, INTO"; SQL statement:
+INSERT PACIENTES VALUES (dni, nombre, apellisp); [42001-197]
+2019-05-06 11:51:11 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLException: Columna "NHOSP" no encontrada
+Column "NHOSP" not found; SQL statement:
+INSERT INTO PACIENTES VALUES ('dni', 'nombre', 'apellidos', 'fechaNacimiento', nhosp); [42122-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:150)
+	at org.h2.command.dml.Insert.prepare(Insert.java:314)
+	at org.h2.command.Parser.prepareCommand(Parser.java:283)
+	at org.h2.engine.Session.prepareLocal(Session.java:611)
+	at org.h2.engine.Session.prepareCommand(Session.java:549)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1247)
+	at org.h2.jdbc.JdbcStatement.executeUpdateInternal(JdbcStatement.java:165)
+	at org.h2.jdbc.JdbcStatement.executeUpdate(JdbcStatement.java:126)
+	at gestpacientes.PacientesDAO.insert(PacientesDAO.java:47)
+	at gestpacientes.GestionPacientes.añadirPacientes(GestionPacientes.java:110)
+	at gestpacientes.GestionPacientes.loop(GestionPacientes.java:85)
+	at gestpacientes.Aplicacion.main(Aplicacion.java:91)
+2019-05-06 11:53:11 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLException: Columna "NHOSP" no encontrada
+Column "NHOSP" not found; SQL statement:
+INSERT INTO PACIENTES (dni, nombre, apellidos, fecha_nacimiento, nhosp) VALUES ('dni', 'nombre', 'apellidos', 'fechaNacimiento', nhosp); [42122-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:150)
+	at org.h2.command.dml.Insert.prepare(Insert.java:314)
+	at org.h2.command.Parser.prepareCommand(Parser.java:283)
+	at org.h2.engine.Session.prepareLocal(Session.java:611)
+	at org.h2.engine.Session.prepareCommand(Session.java:549)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1247)
+	at org.h2.jdbc.JdbcStatement.executeUpdateInternal(JdbcStatement.java:165)
+	at org.h2.jdbc.JdbcStatement.executeUpdate(JdbcStatement.java:126)
+	at gestpacientes.PacientesDAO.insert(PacientesDAO.java:47)
+	at gestpacientes.GestionPacientes.añadirPacientes(GestionPacientes.java:110)
+	at gestpacientes.GestionPacientes.loop(GestionPacientes.java:85)
+	at gestpacientes.Aplicacion.main(Aplicacion.java:91)
+2019-05-06 11:53:51 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Columna "NHOSP" no encontrada
+Column "NHOSP" not found; SQL statement:
+INSERT INTO PACIENTES (dni, nombre, apellidos, fecha_nacimiento, nhosp) VALUES ('dni', 'nombre', 'apellidos', 'fechaNacimiento', nhosp) [42122-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:150)
+	at org.h2.command.dml.Insert.prepare(Insert.java:314)
+	at org.h2.command.Parser.prepareCommand(Parser.java:283)
+	at org.h2.engine.Session.prepareLocal(Session.java:611)
+	at org.h2.engine.Session.prepareCommand(Session.java:549)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1247)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:217)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:1077)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1386)
+	at org.h2.server.web.WebApp.query(WebApp.java:1060)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1022)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1009)
+	at org.h2.server.web.WebThread.process(WebThread.java:165)
+	at org.h2.server.web.WebThread.run(WebThread.java:90)
+	at java.lang.Thread.run(Thread.java:745)
+2019-05-06 11:54:58 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Columna "NHOSP" no encontrada
+Column "NHOSP" not found; SQL statement:
+INSERT INTO PACIENTES (dni, nombre, apellidos, fecha_nacimiento, nhosp) VALUES ('dni', 'nombre', 'apellidos', 'fechaNacimiento', nhosp) [42122-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:150)
+	at org.h2.command.dml.Insert.prepare(Insert.java:314)
+	at org.h2.command.Parser.prepareCommand(Parser.java:283)
+	at org.h2.engine.Session.prepareLocal(Session.java:611)
+	at org.h2.engine.Session.prepareCommand(Session.java:549)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1247)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:217)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:1077)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1386)
+	at org.h2.server.web.WebApp.query(WebApp.java:1060)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1022)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1009)
+	at org.h2.server.web.WebThread.process(WebThread.java:165)
+	at org.h2.server.web.WebThread.run(WebThread.java:90)
+	at java.lang.Thread.run(Thread.java:745)
+2019-05-06 11:55:09 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: La cantidad de columnas no coincide
+Column count does not match; SQL statement:
+INSERT INTO PACIENTES (dni, nombre, apellidos, fecha_nacimiento) VALUES ('dni', 'nombre', 'apellidos', 'fechaNacimiento', nhosp) [21002-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.command.dml.Insert.prepare(Insert.java:306)
+	at org.h2.command.Parser.prepareCommand(Parser.java:283)
+	at org.h2.engine.Session.prepareLocal(Session.java:611)
+	at org.h2.engine.Session.prepareCommand(Session.java:549)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1247)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:217)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:1077)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1386)
+	at org.h2.server.web.WebApp.query(WebApp.java:1060)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1022)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1009)
+	at org.h2.server.web.WebThread.process(WebThread.java:165)
+	at org.h2.server.web.WebThread.run(WebThread.java:90)
+	at java.lang.Thread.run(Thread.java:745)
+2019-05-06 11:55:29 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Imposible interpretar la constante "DATE" "fechaNacimiento"
+Cannot parse "DATE" constant "fechaNacimiento"; SQL statement:
+INSERT INTO PACIENTES (dni, nombre, apellidos, fecha_nacimiento) VALUES ('dni', 'nombre', 'apellidos', 'fechaNacimiento') -- ('dni', 'nombre', 'apellidos', 'fechaNacimiento') [22007-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.value.ValueDate.parse(ValueDate.java:74)
+	at org.h2.value.Value.convertTo(Value.java:1069)
+	at org.h2.table.Column.convert(Column.java:177)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:166)
+	at org.h2.command.dml.Insert.update(Insert.java:134)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:102)
+	at org.h2.command.Command.executeUpdate(Command.java:261)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:233)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:1077)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1386)
+	at org.h2.server.web.WebApp.query(WebApp.java:1060)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1022)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1009)
+	at org.h2.server.web.WebThread.process(WebThread.java:165)
+	at org.h2.server.web.WebThread.run(WebThread.java:90)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.IllegalArgumentException: fechaNacimiento
+	at org.h2.util.DateTimeUtils.parseDateValue(DateTimeUtils.java:345)
+	at org.h2.value.ValueDate.parse(ValueDate.java:72)
+	... 15 more
+2019-05-06 11:56:04 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Error de Sintaxis en sentencia SQL "INSERT INTO PACIENTES (DNI, NOMBRE, APELLIDOS, 1989[*]-12-16) VALUES ('dni', 'nombre', 'apellidos', 'fechaNacimiento') "; se esperaba "identifier"
+Syntax error in SQL statement "INSERT INTO PACIENTES (DNI, NOMBRE, APELLIDOS, 1989[*]-12-16) VALUES ('dni', 'nombre', 'apellidos', 'fechaNacimiento') "; expected "identifier"; SQL statement:
+INSERT INTO PACIENTES (dni, nombre, apellidos, 1989-12-16) VALUES ('dni', 'nombre', 'apellidos', 'fechaNacimiento') [42001-197]
+2019-05-06 11:56:54 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Imposible interpretar la constante "DATE" "1961"
+Cannot parse "DATE" constant "1961"; SQL statement:
+INSERT INTO PACIENTES (dni, nombre, apellidos, fecha_nacimiento) VALUES ('dni', 'nombre', 'apellidos', 1989-12-16) -- ('dni', 'nombre', 'apellidos', 1961) [22007-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.value.ValueDate.parse(ValueDate.java:74)
+	at org.h2.value.Value.convertTo(Value.java:1069)
+	at org.h2.table.Column.convert(Column.java:177)
+	at org.h2.command.dml.Insert.insertRows(Insert.java:166)
+	at org.h2.command.dml.Insert.update(Insert.java:134)
+	at org.h2.command.CommandContainer.update(CommandContainer.java:102)
+	at org.h2.command.Command.executeUpdate(Command.java:261)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:233)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:1077)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1386)
+	at org.h2.server.web.WebApp.query(WebApp.java:1060)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1022)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1009)
+	at org.h2.server.web.WebThread.process(WebThread.java:165)
+	at org.h2.server.web.WebThread.run(WebThread.java:90)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.IllegalArgumentException: 1961
+	at org.h2.util.DateTimeUtils.parseDateValue(DateTimeUtils.java:345)
+	at org.h2.value.ValueDate.parse(ValueDate.java:72)
+	... 15 more
+2019-05-06 12:04:18 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLException: Error de Sintaxis en sentencia SQL "DELETE *[*] FROM PACIENTES "; se esperaba "identifier"
+Syntax error in SQL statement "DELETE *[*] FROM PACIENTES "; expected "identifier"; SQL statement:
+delete * FROM PACIENTES [42001-197]
+2019-05-06 12:04:40 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLException: Error de Sintaxis en sentencia SQL "DELETE PACIENTES WHERE[*]  DNI = '11' "; se esperaba "., FROM"
+Syntax error in SQL statement "DELETE PACIENTES WHERE[*]  DNI = '11' "; expected "., FROM"; SQL statement:
+delete pacientes where  dni = '11' [42001-197]
+2019-05-06 12:48:01 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Error de Sintaxis en sentencia SQL "ELETE[*] FROM PACIENTES "; se esperaba "EXPLAIN, EXECUTE, {"
+Syntax error in SQL statement "ELETE[*] FROM PACIENTES "; expected "EXPLAIN, EXECUTE, {"; SQL statement:
+elete from pacientes [42001-197]
+2019-05-06 13:04:58 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLException: Columna "77319168E" no encontrada
+Column "77319168E" not found [42122-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3174)
+	at org.h2.jdbc.JdbcResultSet.get(JdbcResultSet.java:3247)
+	at org.h2.jdbc.JdbcResultSet.getString(JdbcResultSet.java:310)
+	at gestpacientes.PacientesDAO.comprobarDni(PacientesDAO.java:68)
+	at gestpacientes.PacientesDAO.insert(PacientesDAO.java:40)
+	at gestpacientes.GestionPacientes.añadirPacientes(GestionPacientes.java:150)
+	at gestpacientes.GestionPacientes.loop(GestionPacientes.java:85)
+	at gestpacientes.Aplicacion.main(Aplicacion.java:91)
+2019-05-06 13:06:45 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLException: Columna "77319168E" no encontrada
+Column "77319168E" not found [42122-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.jdbc.JdbcResultSet.getColumnIndex(JdbcResultSet.java:3174)
+	at org.h2.jdbc.JdbcResultSet.get(JdbcResultSet.java:3247)
+	at org.h2.jdbc.JdbcResultSet.getString(JdbcResultSet.java:310)
+	at gestpacientes.PacientesDAO.comprobarDni(PacientesDAO.java:68)
+	at gestpacientes.PacientesDAO.insert(PacientesDAO.java:40)
+	at gestpacientes.GestionPacientes.añadirPacientes(GestionPacientes.java:150)
+	at gestpacientes.GestionPacientes.loop(GestionPacientes.java:85)
+	at gestpacientes.Aplicacion.main(Aplicacion.java:91)
+2019-05-06 16:12:15 jdbc[7]: exception
+org.h2.jdbc.JdbcSQLException: Error de Sintaxis en sentencia SQL "INSERT INTO PACIENTES (dni, nombre, apellidos, fecha_nacimiento) VALUES ('77319168E', 'adrian', 'romero', [*]'1989-12-12);"
+Syntax error in SQL statement "INSERT INTO PACIENTES (dni, nombre, apellidos, fecha_nacimiento) VALUES ('77319168E', 'adrian', 'romero', [*]'1989-12-12);"; SQL statement:
+INSERT INTO PACIENTES (dni, nombre, apellidos, fecha_nacimiento) VALUES ('77319168E', 'adrian', 'romero', '1989-12-12); [42000-197]
+2019-05-06 16:13:35 jdbc[9]: exception
+org.h2.jdbc.JdbcSQLException: Error de Sintaxis en sentencia SQL "INSERT INTO PACIENTES (dni, nombre, apellidos, fecha_nacimiento) VALUES ('77319168E', '11', '11', [*]'2019-12-12);"
+Syntax error in SQL statement "INSERT INTO PACIENTES (dni, nombre, apellidos, fecha_nacimiento) VALUES ('77319168E', '11', '11', [*]'2019-12-12);"; SQL statement:
+INSERT INTO PACIENTES (dni, nombre, apellidos, fecha_nacimiento) VALUES ('77319168E', '11', '11', '2019-12-12); [42000-197]
+2019-05-06 16:15:04 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLException: Error de Sintaxis en sentencia SQL "INSERT INTO PACIENTES (dni, nombre, apellidos, fecha_nacimiento) VALUES ('77319168E', 'aa', 'aa', [*]'1989-12-12);"
+Syntax error in SQL statement "INSERT INTO PACIENTES (dni, nombre, apellidos, fecha_nacimiento) VALUES ('77319168E', 'aa', 'aa', [*]'1989-12-12);"; SQL statement:
+INSERT INTO PACIENTES (dni, nombre, apellidos, fecha_nacimiento) VALUES ('77319168E', 'aa', 'aa', '1989-12-12); [42000-197]
+2019-05-06 16:16:18 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Error de Sintaxis en sentencia SQL "INSERT INTO PACIENTES (dni, nombre, apellidos, fecha_nacimiento) VALUES ('77319168E', 'aa', 'aa', [*]'1989-12-12);"
+Syntax error in SQL statement "INSERT INTO PACIENTES (dni, nombre, apellidos, fecha_nacimiento) VALUES ('77319168E', 'aa', 'aa', [*]'1989-12-12);"; SQL statement:
+INSERT INTO PACIENTES (dni, nombre, apellidos, fecha_nacimiento) VALUES ('77319168E', 'aa', 'aa', '1989-12-12); [42000-197]
+2019-05-06 16:17:28 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Error de Sintaxis en sentencia SQL "INSERT INTO PACIENTES (dni, nombre, apellidos, fecha_nacimiento) VALUES ('77319168E', 'aa', 'aa', [*]'2019-12-11);"
+Syntax error in SQL statement "INSERT INTO PACIENTES (dni, nombre, apellidos, fecha_nacimiento) VALUES ('77319168E', 'aa', 'aa', [*]'2019-12-11);"; SQL statement:
+INSERT INTO PACIENTES (dni, nombre, apellidos, fecha_nacimiento) VALUES ('77319168E', 'aa', 'aa', '2019-12-11); [42000-197]
+2019-05-06 16:21:15 database: flush
+org.h2.message.DbException: Error General : "java.lang.IllegalStateException: The file is locked: nio:C:/Users/adria/OneDrive/Desktop/DAW/_PROG/Tareas/NetBeansProjects/Tarea 10/TareaUT10_2018-19_Incompleta_VersionAlumnado/pacientes.h2db.mv.db [1.4.197/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/adria/OneDrive/Desktop/DAW/_PROG/Tareas/NetBeansProjects/Tarea 10/TareaUT10_2018-19_Incompleta_VersionAlumnado/pacientes.h2db.mv.db [1.4.197/7]" [50000-197]
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.message.DbException.convert(DbException.java:307)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:95)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2506)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:383)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:364)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2934)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:155)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:100)
+	at org.h2.engine.Database.getPageStore(Database.java:2538)
+	at org.h2.engine.Database.open(Database.java:709)
+	at org.h2.engine.Database.openDatabase(Database.java:286)
+	at org.h2.engine.Database.<init>(Database.java:280)
+	at org.h2.engine.Engine.openSession(Engine.java:66)
+	at org.h2.engine.Engine.openSession(Engine.java:179)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:157)
+	at org.h2.engine.Engine.createSession(Engine.java:140)
+	at org.h2.engine.Engine.createSession(Engine.java:28)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:351)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:124)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:103)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at gestpacientes.Aplicacion.main(Aplicacion.java:61)
+Caused by: org.h2.jdbc.JdbcSQLException: Error General : "java.lang.IllegalStateException: The file is locked: nio:C:/Users/adria/OneDrive/Desktop/DAW/_PROG/Tareas/NetBeansProjects/Tarea 10/TareaUT10_2018-19_Incompleta_VersionAlumnado/pacientes.h2db.mv.db [1.4.197/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/adria/OneDrive/Desktop/DAW/_PROG/Tareas/NetBeansProjects/Tarea 10/TareaUT10_2018-19_Incompleta_VersionAlumnado/pacientes.h2db.mv.db [1.4.197/7]" [50000-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	... 25 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/adria/OneDrive/Desktop/DAW/_PROG/Tareas/NetBeansProjects/Tarea 10/TareaUT10_2018-19_Incompleta_VersionAlumnado/pacientes.h2db.mv.db [1.4.197/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:870)
+	at org.h2.mvstore.FileStore.open(FileStore.java:173)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:350)
+	... 19 more
+2019-05-06 16:22:11 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Error de Sintaxis en sentencia SQL "INSERT INTO PACIENTES (dni, nombre, apellidos, fecha_nacimiento) VALUES ('77319168E', 'aa', 'aa', [*]'1989-12-16);"
+Syntax error in SQL statement "INSERT INTO PACIENTES (dni, nombre, apellidos, fecha_nacimiento) VALUES ('77319168E', 'aa', 'aa', [*]'1989-12-16);"; SQL statement:
+INSERT INTO PACIENTES (dni, nombre, apellidos, fecha_nacimiento) VALUES ('77319168E', 'aa', 'aa', '1989-12-16); [42000-197]
+2019-05-06 16:28:42 jdbc[7]: null
+org.h2.message.DbException: La conexión no fue cerrada por la aplicación y esta siendo limpiada (garbage collected)
+The connection was not closed by the application and is garbage collected [90018-197]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:197)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:137)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:103)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at gestpacientes.Aplicacion.conectar(Aplicacion.java:211)
+	at gestpacientes.PacientesDAO.comprobarDni(PacientesDAO.java:79)
+	at gestpacientes.PacientesDAO.insert(PacientesDAO.java:44)
+	at gestpacientes.GestionPacientes.añadirPacientes(GestionPacientes.java:162)
+	at gestpacientes.GestionPacientes.loop(GestionPacientes.java:84)
+	at gestpacientes.Aplicacion.main(Aplicacion.java:93)
+Caused by: org.h2.jdbc.JdbcSQLException: La conexión no fue cerrada por la aplicación y esta siendo limpiada (garbage collected)
+The connection was not closed by the application and is garbage collected [90018-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	... 15 more
+2019-05-06 16:28:42 jdbc[7]: null
+org.h2.message.DbException: La conexión no fue cerrada por la aplicación y esta siendo limpiada (garbage collected)
+The connection was not closed by the application and is garbage collected [90018-197]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:197)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:137)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:103)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at gestpacientes.Aplicacion.conectar(Aplicacion.java:211)
+	at gestpacientes.PacientesDAO.comprobarDni(PacientesDAO.java:79)
+	at gestpacientes.PacientesDAO.insert(PacientesDAO.java:44)
+	at gestpacientes.GestionPacientes.añadirPacientes(GestionPacientes.java:162)
+	at gestpacientes.GestionPacientes.loop(GestionPacientes.java:84)
+	at gestpacientes.Aplicacion.main(Aplicacion.java:93)
+Caused by: org.h2.jdbc.JdbcSQLException: La conexión no fue cerrada por la aplicación y esta siendo limpiada (garbage collected)
+The connection was not closed by the application and is garbage collected [90018-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	... 15 more
+2019-05-06 16:28:42 jdbc[8]: exception
+org.h2.jdbc.JdbcSQLException: Error de Sintaxis en sentencia SQL "INSERT INTO PACIENTES (dni, nombre, apellidos, fecha_nacimiento) VALUES ('77319168E', '11', '11', [*]'1989-12-12);"
+Syntax error in SQL statement "INSERT INTO PACIENTES (dni, nombre, apellidos, fecha_nacimiento) VALUES ('77319168E', '11', '11', [*]'1989-12-12);"; SQL statement:
+INSERT INTO PACIENTES (dni, nombre, apellidos, fecha_nacimiento) VALUES ('77319168E', '11', '11', '1989-12-12); [42000-197]
+2019-05-06 16:34:07 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLException: Error de Sintaxis en sentencia SQL "INSERT INTO PACIENTES (dni, nombre, apellidos, fecha_nacimiento) VALUES ('77319168E', 'aa', 'aa', [*]'1989-12-12)"
+Syntax error in SQL statement "INSERT INTO PACIENTES (dni, nombre, apellidos, fecha_nacimiento) VALUES ('77319168E', 'aa', 'aa', [*]'1989-12-12)"; SQL statement:
+INSERT INTO PACIENTES (dni, nombre, apellidos, fecha_nacimiento) VALUES ('77319168E', 'aa', 'aa', '1989-12-12) [42000-197]
+2019-05-06 16:35:53 jdbc[6]: exception
+org.h2.jdbc.JdbcSQLException: Error de Sintaxis en sentencia SQL "INSERT INTO PACIENTES (dni, nombre, apellidos, fecha_nacimiento) VALUES ('77319168E', 'aa', 'aa', [*]'1989-12-12)"
+Syntax error in SQL statement "INSERT INTO PACIENTES (dni, nombre, apellidos, fecha_nacimiento) VALUES ('77319168E', 'aa', 'aa', [*]'1989-12-12)"; SQL statement:
+INSERT INTO PACIENTES (dni, nombre, apellidos, fecha_nacimiento) VALUES ('77319168E', 'aa', 'aa', '1989-12-12) [42000-197]
+2019-05-06 16:41:58 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLException: Error de Sintaxis en sentencia SQL "DELETE ROM PACIENTES[*] "; se esperaba "., FROM"
+Syntax error in SQL statement "DELETE ROM PACIENTES[*] "; expected "., FROM"; SQL statement:
+delete ROM PACIENTES [42001-197]
+2019-05-06 16:57:38 jdbc[6]: null
+org.h2.message.DbException: La conexión no fue cerrada por la aplicación y esta siendo limpiada (garbage collected)
+The connection was not closed by the application and is garbage collected [90018-197]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:197)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:137)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:103)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at gestpacientes.Aplicacion.conectar(Aplicacion.java:211)
+	at gestpacientes.PacientesDAO.findAll(PacientesDAO.java:107)
+	at gestpacientes.GestionPacientes.listarPacientes(GestionPacientes.java:175)
+	at gestpacientes.GestionPacientes.loop(GestionPacientes.java:87)
+	at gestpacientes.Aplicacion.main(Aplicacion.java:93)
+Caused by: org.h2.jdbc.JdbcSQLException: La conexión no fue cerrada por la aplicación y esta siendo limpiada (garbage collected)
+The connection was not closed by the application and is garbage collected [90018-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	... 14 more
+2019-05-06 17:28:39 jdbc[9]: exception
+org.h2.jdbc.JdbcSQLException: Error de Sintaxis en sentencia SQL "DELETE FROM PACIENTES WHERE DNI = 33234A[*] "
+Syntax error in SQL statement "DELETE FROM PACIENTES WHERE DNI = 33234A[*] "; SQL statement:
+DELETE FROM PACIENTES WHERE dni = 33234a [42000-197]
+2019-05-06 17:29:06 jdbc[10]: exception
+org.h2.jdbc.JdbcSQLException: Error de Sintaxis en sentencia SQL "DELETE FROM PACIENTES WHERE DNI =[*] 77319168E "
+Syntax error in SQL statement "DELETE FROM PACIENTES WHERE DNI =[*] 77319168E "; SQL statement:
+DELETE FROM PACIENTES WHERE dni = 77319168E [42000-197]
+2019-05-06 17:49:11 jdbc[8]: exception
+org.h2.jdbc.JdbcSQLException: No hay datos disponibles.
+No data is available [2000-197]
+2019-05-06 17:50:32 database: flush
+org.h2.message.DbException: Error General : "java.lang.IllegalStateException: The file is locked: nio:C:/Users/adria/OneDrive/Desktop/DAW/_PROG/Tareas/NetBeansProjects/Tarea 10/TareaUT10_2018-19_Incompleta_VersionAlumnado/pacientes.h2db.mv.db [1.4.197/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/adria/OneDrive/Desktop/DAW/_PROG/Tareas/NetBeansProjects/Tarea 10/TareaUT10_2018-19_Incompleta_VersionAlumnado/pacientes.h2db.mv.db [1.4.197/7]" [50000-197]
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.message.DbException.convert(DbException.java:307)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:95)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2506)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:383)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:364)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2934)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:155)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:100)
+	at org.h2.engine.Database.getPageStore(Database.java:2538)
+	at org.h2.engine.Database.open(Database.java:709)
+	at org.h2.engine.Database.openDatabase(Database.java:286)
+	at org.h2.engine.Database.<init>(Database.java:280)
+	at org.h2.engine.Engine.openSession(Engine.java:66)
+	at org.h2.engine.Engine.openSession(Engine.java:179)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:157)
+	at org.h2.engine.Engine.createSession(Engine.java:140)
+	at org.h2.engine.Engine.createSession(Engine.java:28)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:351)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:124)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:103)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at gestpacientes.Aplicacion.main(Aplicacion.java:61)
+Caused by: org.h2.jdbc.JdbcSQLException: Error General : "java.lang.IllegalStateException: The file is locked: nio:C:/Users/adria/OneDrive/Desktop/DAW/_PROG/Tareas/NetBeansProjects/Tarea 10/TareaUT10_2018-19_Incompleta_VersionAlumnado/pacientes.h2db.mv.db [1.4.197/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/adria/OneDrive/Desktop/DAW/_PROG/Tareas/NetBeansProjects/Tarea 10/TareaUT10_2018-19_Incompleta_VersionAlumnado/pacientes.h2db.mv.db [1.4.197/7]" [50000-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	... 25 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/adria/OneDrive/Desktop/DAW/_PROG/Tareas/NetBeansProjects/Tarea 10/TareaUT10_2018-19_Incompleta_VersionAlumnado/pacientes.h2db.mv.db [1.4.197/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:870)
+	at org.h2.mvstore.FileStore.open(FileStore.java:173)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:350)
+	... 19 more
+2019-05-06 17:50:51 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: No hay datos disponibles.
+No data is available [2000-197]
+2019-05-06 17:52:32 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: No hay datos disponibles.
+No data is available [2000-197]
+2019-05-06 17:56:29 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLException: No hay datos disponibles.
+No data is available [2000-197]
+2019-05-06 17:57:59 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLException: No hay datos disponibles.
+No data is available [2000-197]
+2019-05-06 17:58:27 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLException: No hay datos disponibles.
+No data is available [2000-197]
+2019-05-06 19:45:31 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: No hay datos disponibles.
+No data is available [2000-197]
+2019-05-06 19:48:58 database: flush
+org.h2.message.DbException: Error General : "java.lang.IllegalStateException: The file is locked: nio:C:/Users/adria/OneDrive/Desktop/DAW/_PROG/Tareas/NetBeansProjects/Tarea 10/TareaUT10_2018-19_Incompleta_VersionAlumnado/pacientes.h2db.mv.db [1.4.197/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/adria/OneDrive/Desktop/DAW/_PROG/Tareas/NetBeansProjects/Tarea 10/TareaUT10_2018-19_Incompleta_VersionAlumnado/pacientes.h2db.mv.db [1.4.197/7]" [50000-197]
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.message.DbException.convert(DbException.java:307)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:95)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2506)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:383)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:364)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2934)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:155)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:100)
+	at org.h2.engine.Database.getPageStore(Database.java:2538)
+	at org.h2.engine.Database.open(Database.java:709)
+	at org.h2.engine.Database.openDatabase(Database.java:286)
+	at org.h2.engine.Database.<init>(Database.java:280)
+	at org.h2.engine.Engine.openSession(Engine.java:66)
+	at org.h2.engine.Engine.openSession(Engine.java:179)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:157)
+	at org.h2.engine.Engine.createSession(Engine.java:140)
+	at org.h2.engine.Engine.createSession(Engine.java:28)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:351)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:124)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:103)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at gestpacientes.Aplicacion.main(Aplicacion.java:61)
+Caused by: org.h2.jdbc.JdbcSQLException: Error General : "java.lang.IllegalStateException: The file is locked: nio:C:/Users/adria/OneDrive/Desktop/DAW/_PROG/Tareas/NetBeansProjects/Tarea 10/TareaUT10_2018-19_Incompleta_VersionAlumnado/pacientes.h2db.mv.db [1.4.197/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/adria/OneDrive/Desktop/DAW/_PROG/Tareas/NetBeansProjects/Tarea 10/TareaUT10_2018-19_Incompleta_VersionAlumnado/pacientes.h2db.mv.db [1.4.197/7]" [50000-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	... 25 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/adria/OneDrive/Desktop/DAW/_PROG/Tareas/NetBeansProjects/Tarea 10/TareaUT10_2018-19_Incompleta_VersionAlumnado/pacientes.h2db.mv.db [1.4.197/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:870)
+	at org.h2.mvstore.FileStore.open(FileStore.java:173)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:350)
+	... 19 more
+2019-05-06 19:49:45 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLException: No hay datos disponibles.
+No data is available [2000-197]
+2019-05-06 19:53:02 jdbc[4]: exception
+org.h2.jdbc.JdbcSQLException: Valor Invalido "4" para el parametro "columnIndex"
+Invalid value "4" for parameter "columnIndex" [90008-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.getInvalidValueException(DbException.java:240)
+	at org.h2.jdbc.JdbcResultSet.checkColumnIndex(JdbcResultSet.java:3191)
+	at org.h2.jdbc.JdbcResultSet.get(JdbcResultSet.java:3230)
+	at org.h2.jdbc.JdbcResultSet.getString(JdbcResultSet.java:292)
+	at gestpacientes.PacientesDAO.detallesPaciente(PacientesDAO.java:166)
+	at gestpacientes.GestionPacientes.mostrarDetalles(GestionPacientes.java:203)
+	at gestpacientes.GestionPacientes.loop(GestionPacientes.java:93)
+	at gestpacientes.Aplicacion.main(Aplicacion.java:93)
+2019-05-06 20:26:17 database: flush
+org.h2.message.DbException: Error General : "java.lang.IllegalStateException: The file is locked: nio:C:/Users/adria/OneDrive/Desktop/DAW/_PROG/Tareas/NetBeansProjects/Tarea 10/TareaUT10_2018-19_Incompleta_VersionAlumnado/pacientes.h2db.mv.db [1.4.197/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/adria/OneDrive/Desktop/DAW/_PROG/Tareas/NetBeansProjects/Tarea 10/TareaUT10_2018-19_Incompleta_VersionAlumnado/pacientes.h2db.mv.db [1.4.197/7]" [50000-197]
+	at org.h2.message.DbException.get(DbException.java:168)
+	at org.h2.message.DbException.convert(DbException.java:307)
+	at org.h2.mvstore.db.MVTableEngine$1.uncaughtException(MVTableEngine.java:95)
+	at org.h2.mvstore.MVStore.handleException(MVStore.java:2506)
+	at org.h2.mvstore.MVStore.panic(MVStore.java:383)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:364)
+	at org.h2.mvstore.MVStore$Builder.open(MVStore.java:2934)
+	at org.h2.mvstore.db.MVTableEngine$Store.open(MVTableEngine.java:155)
+	at org.h2.mvstore.db.MVTableEngine.init(MVTableEngine.java:100)
+	at org.h2.engine.Database.getPageStore(Database.java:2538)
+	at org.h2.engine.Database.open(Database.java:709)
+	at org.h2.engine.Database.openDatabase(Database.java:286)
+	at org.h2.engine.Database.<init>(Database.java:280)
+	at org.h2.engine.Engine.openSession(Engine.java:66)
+	at org.h2.engine.Engine.openSession(Engine.java:179)
+	at org.h2.engine.Engine.createSessionAndValidate(Engine.java:157)
+	at org.h2.engine.Engine.createSession(Engine.java:140)
+	at org.h2.engine.Engine.createSession(Engine.java:28)
+	at org.h2.engine.SessionRemote.connectEmbeddedOrServer(SessionRemote.java:351)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:124)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:103)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at gestpacientes.Aplicacion.main(Aplicacion.java:61)
+Caused by: org.h2.jdbc.JdbcSQLException: Error General : "java.lang.IllegalStateException: The file is locked: nio:C:/Users/adria/OneDrive/Desktop/DAW/_PROG/Tareas/NetBeansProjects/Tarea 10/TareaUT10_2018-19_Incompleta_VersionAlumnado/pacientes.h2db.mv.db [1.4.197/7]"
+General error: "java.lang.IllegalStateException: The file is locked: nio:C:/Users/adria/OneDrive/Desktop/DAW/_PROG/Tareas/NetBeansProjects/Tarea 10/TareaUT10_2018-19_Incompleta_VersionAlumnado/pacientes.h2db.mv.db [1.4.197/7]" [50000-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	... 25 more
+Caused by: java.lang.IllegalStateException: The file is locked: nio:C:/Users/adria/OneDrive/Desktop/DAW/_PROG/Tareas/NetBeansProjects/Tarea 10/TareaUT10_2018-19_Incompleta_VersionAlumnado/pacientes.h2db.mv.db [1.4.197/7]
+	at org.h2.mvstore.DataUtils.newIllegalStateException(DataUtils.java:870)
+	at org.h2.mvstore.FileStore.open(FileStore.java:173)
+	at org.h2.mvstore.MVStore.<init>(MVStore.java:350)
+	... 19 more
+2019-05-06 20:40:17 jdbc[7]: null
+org.h2.message.DbException: La conexión no fue cerrada por la aplicación y esta siendo limpiada (garbage collected)
+The connection was not closed by the application and is garbage collected [90018-197]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:197)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:137)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:103)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at gestpacientes.Aplicacion.conectar(Aplicacion.java:211)
+	at gestpacientes.PacientesDAO.findAll(PacientesDAO.java:109)
+	at gestpacientes.GestionPacientes.listarPacientes(GestionPacientes.java:180)
+	at gestpacientes.GestionPacientes.loop(GestionPacientes.java:87)
+	at gestpacientes.Aplicacion.main(Aplicacion.java:93)
+Caused by: org.h2.jdbc.JdbcSQLException: La conexión no fue cerrada por la aplicación y esta siendo limpiada (garbage collected)
+The connection was not closed by the application and is garbage collected [90018-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	... 14 more
+2019-05-06 20:40:17 jdbc[7]: null
+org.h2.message.DbException: La conexión no fue cerrada por la aplicación y esta siendo limpiada (garbage collected)
+The connection was not closed by the application and is garbage collected [90018-197]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:197)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:137)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:103)
+	at org.h2.Driver.connect(Driver.java:69)
+	at java.sql.DriverManager.getConnection(DriverManager.java:664)
+	at java.sql.DriverManager.getConnection(DriverManager.java:247)
+	at gestpacientes.Aplicacion.conectar(Aplicacion.java:211)
+	at gestpacientes.PacientesDAO.findAll(PacientesDAO.java:109)
+	at gestpacientes.GestionPacientes.listarPacientes(GestionPacientes.java:180)
+	at gestpacientes.GestionPacientes.loop(GestionPacientes.java:87)
+	at gestpacientes.Aplicacion.main(Aplicacion.java:93)
+Caused by: org.h2.jdbc.JdbcSQLException: La conexión no fue cerrada por la aplicación y esta siendo limpiada (garbage collected)
+The connection was not closed by the application and is garbage collected [90018-197]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:357)
+	... 14 more
